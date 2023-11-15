@@ -19,4 +19,13 @@ function coloring(event){
     event.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
     event.target.innerHTML = `(${red},${green},${blue})`;
 }
+
+const button = document.querySelector("button")
+button.addEventListener("click",() => {
+    const fields = document.querySelectorAll(".field")
+    fields.forEach(gomb => {
+        gomb.style.backgroundColor = "";
+        gomb.innerHTML = "";
+    })
+})
 render();

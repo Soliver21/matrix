@@ -7,9 +7,19 @@ img{width: 100%;}
 .container{
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(var(--bg1), var(--bg2));
+}
+button{
+    width: 5rem;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: #000 1px solid;
+    border-radius: 10%;
+    background-color: rgb(31, 145, 107);
 }
 .matrix{
     height: 50vh;
@@ -23,4 +33,12 @@ img{width: 100%;}
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotation{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
