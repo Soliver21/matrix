@@ -20,4 +20,7 @@ img{width: 100%;}
 }
 .field{
     box-shadow: 0 0 10px 1px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

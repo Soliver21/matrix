@@ -4,14 +4,19 @@ function render(){
     for (let i = 0; i<25; i++){
     const field = document.createElement("div");
     // eseményfigyelő
+    field.addEventListener("click", coloring)
     field.classList.add("field");
     matrix.appendChild(field)
     }
-
 }
-function coloring(){
-    red = Math.floor(Math.random()+255+1)
-    green = Math.floor(Math.random()+255+1)
-    blue = Math.floor(Math.random()+255+1)
+function randomcolor(){
+    return Math.floor(Math.random()*254+1)
+}
+function coloring(event){
+    let red = randomcolor();
+    let green = randomcolor();
+    let blue = randomcolor();
+    event.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
+    event.target.innerHTML = `(${red},${green},${blue})`;
 }
 render();
