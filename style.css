@@ -1,1 +1,23 @@
+:root{
+    --bg1: hsl(180, 73%, 36%);
+    --bg2: hsl(337, 67%, 44%);
+}
 *{margin: 0; padding: 0; box-sizing: border-box;}
+img{width: 100%;}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(var(--bg1), var(--bg2));
+}
+.matrix{
+    height: 50vh;
+    width: 50vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.field{
+    box-shadow: 0 0 10px 1px #000;
+}
