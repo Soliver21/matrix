@@ -9,4 +9,9 @@ function render(){
     }
 
 }
+function coloring(){
+    red = Math.floor(Math.random()+255+1)
+    green = Math.floor(Math.random()+255+1)
+    blue = Math.floor(Math.random()+255+1)
+}
 render();
